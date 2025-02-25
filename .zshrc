@@ -126,3 +126,12 @@ export COMPOSER_MEMORY_LIMIT=-1
 #}
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
+#
+
+export PATH="$PATH:/Users/cri/.cache/lm-studio/bin"
+
+export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export GOROOT=$(brew --prefix go)/libexec
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH:$HOME/bin
