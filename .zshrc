@@ -135,3 +135,8 @@ export PATH="$HOME/bin:$PATH"
 export GOROOT=$(brew --prefix go)/libexec
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH:$HOME/bin
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/cri/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
